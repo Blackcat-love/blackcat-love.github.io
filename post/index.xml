@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Blackcat Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 30 Dec 2021 18:37:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Dec 2021 01:57:20 +0800</lastBuildDate>
     
 	<atom:link href="https://Blackcat-love.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>编写博客的技巧</title>
+      <link>https://Blackcat-love.github.io/post/blog3/</link>
+      <pubDate>Fri, 31 Dec 2021 01:57:20 +0800</pubDate>
+      
+      <guid>https://Blackcat-love.github.io/post/blog3/</guid>
+      <description>使用Hugo代码创建了一个blog.md格式的文件 打开这个文件后，只能更改标题和编写内容，但是该如何对文本进行美化呢？
+因为我之前学习过Html语言，所以我尝试输入里换行，结果运行成功，随后我又尝试了更改文字颜色，背景颜色，也是成功，这代表，我们可以使用Html和css来美化我们的博客内容</description>
+    </item>
     
     <item>
       <title>有关hugo博客搭建和编辑的使用教程</title>
