@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://blackcat-love.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Dec 2021 14:29:30 +0800</lastBuildDate>
+    
+	<atom:link href="https://blackcat-love.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的第一篇Blog</title>
+      <link>https://blackcat-love.github.io/post/blog/</link>
+      <pubDate>Thu, 30 Dec 2021 14:29:30 +0800</pubDate>
+      
+      <guid>https://blackcat-love.github.io/post/blog/</guid>
+      <description>经过了两天的学习和了解 学会了使用hugo or heox 将本地博客推到github上，实现静态博客的配布 其中踩了许多的坑 当博客部署成功后我会将自己的经验更加详细化的记录的</description>
+    </item>
+    
+  </channel>
+</rss>
