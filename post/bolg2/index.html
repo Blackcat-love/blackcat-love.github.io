@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>有关hugo博客搭建和编辑的使用教程 // Blackcat Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://Blackcat-love.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="有关hugo博客搭建和编辑的使用教程"/>
+<meta name="twitter:description" content="自从开始学习编程以后，我便将我所学全部都记录于笔记本和网络笔记，随着积累，我便有了想要搭建博客的想法
+希望能将自己的学习历程和经验都分享给更多人，但万事开头难，我也尝试过很多次搭建，最终都以失败告终，查
+找了很多资料，最终整理出了这份搭建方法，希望能对面前的你有所帮助，如果还是无法解决，也可以联系我的邮
+箱，我会经我所能帮你解答疑惑。
+首先在开始搭建前，需要准备以下几款软件
+git
+hugo
+Vscode（这个软件是用来打开和编辑源代码的，有了会更方便一些，当然你用记事本也可以）
+还需要一个github的账号，在官网 https://github.com 里注册就好，如果进不去那是因为DNS的污染，也是老生常谈的问题了，百度搜索一下有很多教程可以解决的，就不多赘述了
+git下载地址：https://git-scm.com/
+hugo下载地址：https://gohugo.io/getting-started/installing/ or 去hugo的官方github仓库 https://github.com/gohugoio/hugo/releases 下载对应的操作系统版本的Hugo二进制文件,如果你是64位系统就是hugo_0.55.1_Windows-64bit.zip，32位则对应另一个
+下载完后需要配置环境变量，可以去看这个教程，很详细 https://baijiahao.baidu.com/s?id=1630800288039248525&amp;wfr=spider&amp;for=pc
+在配置环境变量有一个坑
+如果你是win8系统，点击path环境变量的编辑后他只会出现一个小框，没办法新建变量
+而我最后的解决办法是, 首先在系统变量下面, 新建一个变量 变量名字是hugo 变量值写入你的下载Hugo的路径 我的路径是D：\Blog 直接填入然后确定 然后在系统变量的path里点击编辑 在变量值最后面用分号隔开填入你的hugo路径就可以 例子：
+C:\Program Files\dotnet\;D:\Blog\;C:\Program Files\Git\cmd 中间就是hugo的变量
+完成后环境的搭建就算大功告成了
+这时候使用cmd来测试一下你的git 和 hugo 有没有装好 输入代码
+git &ndash;help
+如果出现长串说明代表成功 hugo同样
+hugo &ndash;help
+这里还有一个坑，一定要使用右键管理员启动cmd，不然有时候明明输入的代码正确却显示错误
+一切都正常后开始下一步，因为我是windows，所以接下来会更偏向这个的使用习惯
+首先在C盘外的其他盘建立一个文件夹，这里我用的是D盘，建立一个Blog文件夹，中文也就是博客 然后cmd命令
+D：
+cd blog
+进入到blog文件夹里
+然后使用Hugo指令创建一个本地博客
+hugo new site myblog
+成功后你可以发现在D：/blog/Myblog 里多了很多文件，可以点击打开查看，也可以直接输入
+cd myblog
+dir
+来查看
+这一步也成功后，接下来给你的博客选择一个好看的风格，也就是主题，进入到https://www.gohugo.org/theme/来选择 选好后按照你那个主页的链接进行下载
+仔细观察可以发现在Installation下面有下载用的代码
+这个代码其实无非就是，让你先创建一个名为themes的文件夹，在你博客的根目录下，然后进入到themes这个文件里，然后通过git clone (hugo的主题) 命令来下载到themes里"/>
+
+    <meta property="og:title" content="有关hugo博客搭建和编辑的使用教程" />
+<meta property="og:description" content="自从开始学习编程以后，我便将我所学全部都记录于笔记本和网络笔记，随着积累，我便有了想要搭建博客的想法
+希望能将自己的学习历程和经验都分享给更多人，但万事开头难，我也尝试过很多次搭建，最终都以失败告终，查
+找了很多资料，最终整理出了这份搭建方法，希望能对面前的你有所帮助，如果还是无法解决，也可以联系我的邮
+箱，我会经我所能帮你解答疑惑。
+首先在开始搭建前，需要准备以下几款软件
+git
+hugo
+Vscode（这个软件是用来打开和编辑源代码的，有了会更方便一些，当然你用记事本也可以）
+还需要一个github的账号，在官网 https://github.com 里注册就好，如果进不去那是因为DNS的污染，也是老生常谈的问题了，百度搜索一下有很多教程可以解决的，就不多赘述了
+git下载地址：https://git-scm.com/
+hugo下载地址：https://gohugo.io/getting-started/installing/ or 去hugo的官方github仓库 https://github.com/gohugoio/hugo/releases 下载对应的操作系统版本的Hugo二进制文件,如果你是64位系统就是hugo_0.55.1_Windows-64bit.zip，32位则对应另一个
+下载完后需要配置环境变量，可以去看这个教程，很详细 https://baijiahao.baidu.com/s?id=1630800288039248525&amp;wfr=spider&amp;for=pc
+在配置环境变量有一个坑
+如果你是win8系统，点击path环境变量的编辑后他只会出现一个小框，没办法新建变量
+而我最后的解决办法是, 首先在系统变量下面, 新建一个变量 变量名字是hugo 变量值写入你的下载Hugo的路径 我的路径是D：\Blog 直接填入然后确定 然后在系统变量的path里点击编辑 在变量值最后面用分号隔开填入你的hugo路径就可以 例子：
+C:\Program Files\dotnet\;D:\Blog\;C:\Program Files\Git\cmd 中间就是hugo的变量
+完成后环境的搭建就算大功告成了
+这时候使用cmd来测试一下你的git 和 hugo 有没有装好 输入代码
+git &ndash;help
+如果出现长串说明代表成功 hugo同样
+hugo &ndash;help
+这里还有一个坑，一定要使用右键管理员启动cmd，不然有时候明明输入的代码正确却显示错误
+一切都正常后开始下一步，因为我是windows，所以接下来会更偏向这个的使用习惯
+首先在C盘外的其他盘建立一个文件夹，这里我用的是D盘，建立一个Blog文件夹，中文也就是博客 然后cmd命令
+D：
+cd blog
+进入到blog文件夹里
+然后使用Hugo指令创建一个本地博客
+hugo new site myblog
+成功后你可以发现在D：/blog/Myblog 里多了很多文件，可以点击打开查看，也可以直接输入
+cd myblog
+dir
+来查看
+这一步也成功后，接下来给你的博客选择一个好看的风格，也就是主题，进入到https://www.gohugo.org/theme/来选择 选好后按照你那个主页的链接进行下载
+仔细观察可以发现在Installation下面有下载用的代码
+这个代码其实无非就是，让你先创建一个名为themes的文件夹，在你博客的根目录下，然后进入到themes这个文件里，然后通过git clone (hugo的主题) 命令来下载到themes里" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Blackcat-love.github.io/post/bolg2/" />
+<meta property="article:published_time" content="2021-12-30T18:37:32+08:00" />
+<meta property="article:modified_time" content="2021-12-30T18:37:32+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://Blackcat-love.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>Blackcat Blog</h1>
+      <p>blackcat_19216811@163.com</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/Blackcat-love" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>My Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://space.bilibili.com/17314291" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">有关hugo博客搭建和编辑的使用教程</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 30, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <hr />
+
+<p>自从开始学习编程以后，我便将我所学全部都记录于笔记本和网络笔记，随着积累，我便有了想要搭建博客的想法<br>
+希望能将自己的学习历程和经验都分享给更多人，但万事开头难，我也尝试过很多次搭建，最终都以失败告终，查<br>
+找了很多资料，最终整理出了这份搭建方法，希望能对面前的你有所帮助，如果还是无法解决，也可以联系我的邮<br>
+箱，我会经我所能帮你解答疑惑。</p>
+
+<p>首先在开始搭建前，需要准备以下几款软件<br>
+git<br>    hugo<br>   Vscode（这个软件是用来打开和编辑源代码的，有了会更方便一些，当然你用记事本也可以）<br></p>
+
+<p>还需要一个github的账号，在官网 <a href="https://github.com">https://github.com</a> 里注册就好，如果进不去那是因为DNS的污染，也是老生常谈的问题了，百度搜索一下有很多教程可以解决的，就不多赘述了<br></p>
+
+<p>git下载地址：<a href="https://git-scm.com/">https://git-scm.com/</a><br>
+hugo下载地址：<a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a> or 去hugo的官方github仓库 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> 下载对应的操作系统版本的Hugo二进制文件,如果你是64位系统就是hugo_0.55.1_Windows-64bit.zip，32位则对应另一个</p>
+
+<p>下载完后需要配置环境变量，可以去看这个教程，很详细
+<a href="https://baijiahao.baidu.com/s?id=1630800288039248525&amp;wfr=spider&amp;for=pc">https://baijiahao.baidu.com/s?id=1630800288039248525&amp;wfr=spider&amp;for=pc</a></p>
+
+<p>在配置环境变量有一个坑<br>
+如果你是win8系统，点击path环境变量的编辑后他只会出现一个小框，没办法新建变量<br>
+而我最后的解决办法是,
+首先在系统变量下面,
+新建一个变量
+变量名字是hugo  变量值写入你的下载Hugo的路径 我的路径是D：\Blog 直接填入然后确定
+然后在系统变量的path里点击编辑
+在变量值最后面用分号隔开填入你的hugo路径就可以
+例子：<br>
+C:\Program Files\dotnet\;D:\Blog\;C:\Program Files\Git\cmd    中间就是hugo的变量</p>
+
+<p>完成后环境的搭建就算大功告成了</p>
+
+<p>这时候使用cmd来测试一下你的git 和 hugo 有没有装好
+输入代码</p>
+
+<p>git &ndash;help</p>
+
+<p>如果出现长串说明代表成功
+hugo同样</p>
+
+<p>hugo &ndash;help</p>
+
+<p>这里还有一个坑，一定要使用右键管理员启动cmd，不然有时候明明输入的代码正确却显示错误</p>
+
+<p>一切都正常后开始下一步，因为我是windows，所以接下来会更偏向这个的使用习惯</p>
+
+<p>首先在C盘外的其他盘建立一个文件夹，这里我用的是D盘，建立一个Blog文件夹，中文也就是博客
+然后cmd命令<br>
+D：<br>
+cd blog<br>
+进入到blog文件夹里<br>
+然后使用Hugo指令创建一个本地博客<br>
+hugo new site myblog<br>
+成功后你可以发现在D：/blog/Myblog 里多了很多文件，可以点击打开查看，也可以直接输入<br>
+cd myblog<br>
+dir<br>
+来查看<br></p>
+
+<p>这一步也成功后，接下来给你的博客选择一个好看的风格，也就是主题，进入到<a href="https://www.gohugo.org/theme/来选择">https://www.gohugo.org/theme/来选择</a>
+选好后按照你那个主页的链接进行下载<br>
+仔细观察可以发现在Installation下面有下载用的代码<br>
+这个代码其实无非就是，让你先创建一个名为themes的文件夹，在你博客的根目录下，然后进入到themes这个文件里，然后通过git clone (hugo的主题) 命令来下载到themes里<br>
+这里我直接用最简洁的办法<br>
+首先<br>
+cd [path]  <br>
+就是先用cd命令到你的博客根目录下<br>
+git clone <a href="https://github.com/hugo-theme-m10c.git">https://github.com/hugo-theme-m10c.git</a> themes/m10c<br>
+然后使用git命令下载当前网址的主题到新建的 themes文件夹里的m10c文件夹里<br></p>
+
+<p>成功下载以后就可以在 D:/blog/Myblog/themes/m10c/ 里看到又多了一堆文件，这些文件就是你刚下载的主题<br></p>
+
+<p>如果无法下载，可能有两个原因，第一个原因是你的网络卡动，第二个原因是没有右键管理员运行cmd<br></p>
+
+<p>成功后回到博客根目录下<br>
+然后输入<br>
+hugo server -t m10c &ndash;buildDrafts<br>
+来在本地启动你的博客<br>
+成功后会显示<br></p>
+
+<hr />
+
+<p>D:\zhandian\myblog&gt;hugo server -t m10c &ndash;buildDrafts<br>
+<h>
+Building sites …<br>
+                   | EN<br>
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;-+<br>
+  Pages            | 11<br>
+  Paginator pages  |  0<br>
+  Non-page files   |  0<br>
+  Static files     |  1<br>
+  Processed images |  0<br>
+  Aliases          |  2<br>
+  Sitemaps         |  1<br>
+  Cleaned          |  0<br></p>
+
+<p>Total in 19 ms<br>
+Watching for changes in D:\zhandian\myblogarchetypes,content,data,layouts,stat<br>
+ic,themes}<br>
+Watching for config changes in D:\zhandian\myblog\config.toml<br>
+Environment: &ldquo;development&rdquo;<br>
+Serving pages from memory<br>
+Running in Fast Render Mode. For full rebuilds on change: hugo server &ndash;disableF<br>
+astRender<br>
+Web Server is available at <a href="http://localhost:1313/">http://localhost:1313/</a> (bind address 127.0.0.1)<br>
+Press Ctrl+C to stop<br></p>
+
+<hr />
+
+<p><h/></p>
+
+<p>如果显示这样，那就代表成功了
+在最下排会有一个Web Server is available at <a href="http://localhost:1313/">http://localhost:1313/</a> (bind address 127.0.0.1)<br>
+将这个网址复制到浏览器里就能浏览本地博客了<br>
+成功后按Ctrl+C来结束运行<br></p>
+
+<p>接下来让我们通过hugo命令来在本地发布第一个博客内容
+首先回到博客的根目录<br>
+然后输入<br>
+hugo new post/blog.md<br>
+这是命令是新建一个Hugo博客内容 在根目录创建一个Post文件夹然后在里面创建一个名为blog.md的博客内容<br>
+成功后通过命令或者是手动去检查是否创建成功<br>
+成功后，接下来就是在这个Blog.md文件里去写你的博客内容，这时候就要用到我之前说的Vscode软件来打开，进去之后有三行代码，我们另起一行去写我们的内容就好了<br>
+这其中有一个标题的内容可以改，你可以在title这个属性的引号里去改一个标题<br></p>
+
+<p>本地博客搭建好后，接下来就是将他推送到github的仓库里，让我们可以在互联网上浏览到</p>
+
+<p>至于github的账号中注册和仓库创建，可以去网上百度教程，也是都能搜到，这里我推荐一个 <a href="https://www.bilibili.com/video/BV1tM4y1T7co?from=search&amp;seid=6689601655732001844&amp;spm_id_from=333.337.0.0">https://www.bilibili.com/video/BV1tM4y1T7co?from=search&amp;seid=6689601655732001844&amp;spm_id_from=333.337.0.0</a>  <br></p>
+
+<p>需要注意的地方是，注册github的名字需要是小些字母和数字，这样以后方便盯正，最好不要用符号，而创建仓库的时候，你的仓库地址要和你的名字是一样的，并且是以github.io为结尾<br></p>
+
+<p>准备好后，接下来就是将本地博客部署到github的仓库里<br>
+首先回到博客的根目录，这个很重要，如果你的命令老是失败，很有可能就是没有回到根目录，所以一定要时刻查看<br>
+输入<br>
+hugo &ndash;theme=m11c &ndash;baseUrl=&ldquo;https://你的githunb名字.github.io/&rdquo; &ndash;buildDrafts  <br>
+这其中你注册时的名字填到里面就可以，成功后也显示一个方格子<br>
+这时候会生成一个public文件夹，这个文件里的东西就是要稍后发送到你的github仓库里的东西。</p>
+
+<p>cd public <br>
+git init<br>
+git add . <br>
+git commit -m &ldquo;我的Hugo博客第一次上传&rdquo;<br></p>
+
+<p>通过这四个命令将文件加到仓库里<br></p>
+
+<p>git remote add origin <a href="https://github.com/你的github账号名字/你的github仓库地址.git">https://github.com/你的github账号名字/你的github仓库地址.git</a> <br>
+举例<br>
+git remote add origin <a href="https://github.com/blackcat110/balckcat110.github.io.git">https://github.com/blackcat110/balckcat110.github.io.git</a> <br>
+这一部用来将你的博客和你的仓库关联<br></p>
+
+<p>git push -u origin master <br>
+然后输入你的github账号和密码<br>
+注意，输入你的密码的时候，会自动隐藏，继续输入就好<br>
+成功后你的内容就会被推到仓库里，然后通过仓库的地址就可以在互联网上打开里<br></p>
+
+<p>到这里就算是结束了，希望你可以成功搭建你的博客：）<br></p>
+
+<p>参考教程：<br>
+<a href="https://www.bilibili.com/video/BV1q4411i7gL">https://www.bilibili.com/video/BV1q4411i7gL</a> <br>
+<a href="https://www.gohugo.org/">https://www.gohugo.org/</a> <br>
+<a href="https://zhuanlan.zhihu.com/p/126298572">https://zhuanlan.zhihu.com/p/126298572</a> <br>
+<a href="https://www.jianshu.com/p/d97df4e195a9">https://www.jianshu.com/p/d97df4e195a9</a> <br></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
