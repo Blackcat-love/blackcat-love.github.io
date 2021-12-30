@@ -1,22 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://blackcat-love.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Blackcat Blog</title>
+    <link>https://Blackcat-love.github.io/</link>
+    <description>Recent content on Blackcat Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Dec 2021 14:29:30 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 30 Dec 2021 18:37:32 +0800</lastBuildDate>
     
-	<atom:link href="https://blackcat-love.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Blackcat-love.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>有关hugo博客搭建和编辑的使用教程</title>
+      <link>https://Blackcat-love.github.io/post/bolg2/</link>
+      <pubDate>Thu, 30 Dec 2021 18:37:32 +0800</pubDate>
+      
+      <guid>https://Blackcat-love.github.io/post/bolg2/</guid>
+      <description>自从开始学习编程以后，我便将我所学全部都记录于笔记本和网络笔记，随着积累，我便有了想要搭建博客的想法
+希望能将自己的学习历程和经验都分享给更多人，但万事开头难，我也尝试过很多次搭建，最终都以失败告终，查
+找了很多资料，最终整理出了这份搭建方法，希望能对面前的你有所帮助，如果还是无法解决，也可以联系我的邮
+箱，我会经我所能帮你解答疑惑。
+首先在开始搭建前，需要准备以下几款软件
+git
+hugo
+Vscode（这个软件是用来打开和编辑源代码的，有了会更方便一些，当然你用记事本也可以）
+还需要一个github的账号，在官网 https://github.com 里注册就好，如果进不去那是因为DNS的污染，也是老生常谈的问题了，百度搜索一下有很多教程可以解决的，就不多赘述了
+git下载地址：https://git-scm.com/
+hugo下载地址：https://gohugo.io/getting-started/installing/ or 去hugo的官方github仓库 https://github.com/gohugoio/hugo/releases 下载对应的操作系统版本的Hugo二进制文件,如果你是64位系统就是hugo_0.55.1_Windows-64bit.zip，32位则对应另一个
+下载完后需要配置环境变量，可以去看这个教程，很详细 https://baijiahao.baidu.com/s?id=1630800288039248525&amp;amp;wfr=spider&amp;amp;for=pc
+在配置环境变量有一个坑
+如果你是win8系统，点击path环境变量的编辑后他只会出现一个小框，没办法新建变量
+而我最后的解决办法是, 首先在系统变量下面, 新建一个变量 变量名字是hugo 变量值写入你的下载Hugo的路径 我的路径是D：\Blog 直接填入然后确定 然后在系统变量的path里点击编辑 在变量值最后面用分号隔开填入你的hugo路径就可以 例子：
+C:\Program Files\dotnet\;D:\Blog\;C:\Program Files\Git\cmd 中间就是hugo的变量
+完成后环境的搭建就算大功告成了
+这时候使用cmd来测试一下你的git 和 hugo 有没有装好 输入代码
+git &amp;ndash;help
+如果出现长串说明代表成功 hugo同样
+hugo &amp;ndash;help
+这里还有一个坑，一定要使用右键管理员启动cmd，不然有时候明明输入的代码正确却显示错误
+一切都正常后开始下一步，因为我是windows，所以接下来会更偏向这个的使用习惯
+首先在C盘外的其他盘建立一个文件夹，这里我用的是D盘，建立一个Blog文件夹，中文也就是博客 然后cmd命令
+D：
+cd blog
+进入到blog文件夹里
+然后使用Hugo指令创建一个本地博客
+hugo new site myblog
+成功后你可以发现在D：/blog/Myblog 里多了很多文件，可以点击打开查看，也可以直接输入
+cd myblog
+dir
+来查看
+这一步也成功后，接下来给你的博客选择一个好看的风格，也就是主题，进入到https://www.gohugo.org/theme/来选择 选好后按照你那个主页的链接进行下载
+仔细观察可以发现在Installation下面有下载用的代码
+这个代码其实无非就是，让你先创建一个名为themes的文件夹，在你博客的根目录下，然后进入到themes这个文件里，然后通过git clone (hugo的主题) 命令来下载到themes里</description>
+    </item>
+    
+    <item>
       <title>我的第一篇Blog</title>
-      <link>https://blackcat-love.github.io/post/blog/</link>
+      <link>https://Blackcat-love.github.io/post/blog/</link>
       <pubDate>Thu, 30 Dec 2021 14:29:30 +0800</pubDate>
       
-      <guid>https://blackcat-love.github.io/post/blog/</guid>
+      <guid>https://Blackcat-love.github.io/post/blog/</guid>
       <description>经过了两天的学习和了解 学会了使用hugo or heox 将本地博客推到github上，实现静态博客的配布 其中踩了许多的坑 当博客部署成功后我会将自己的经验更加详细化的记录的</description>
     </item>
     

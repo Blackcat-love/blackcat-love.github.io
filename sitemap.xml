@@ -3,26 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blackcat-love.github.io/</loc>
+    <loc>https://Blackcat-love.github.io/</loc>
+    <lastmod>2021-12-30T18:37:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Blackcat-love.github.io/post/</loc>
+    <lastmod>2021-12-30T18:37:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Blackcat-love.github.io/post/bolg2/</loc>
+    <lastmod>2021-12-30T18:37:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Blackcat-love.github.io/post/blog/</loc>
     <lastmod>2021-12-30T14:29:30+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blackcat-love.github.io/post/</loc>
-    <lastmod>2021-12-30T14:29:30+08:00</lastmod>
+    <loc>https://Blackcat-love.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://blackcat-love.github.io/post/blog/</loc>
-    <lastmod>2021-12-30T14:29:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blackcat-love.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blackcat-love.github.io/tags/</loc>
+    <loc>https://Blackcat-love.github.io/tags/</loc>
   </url>
   
 </urlset>
