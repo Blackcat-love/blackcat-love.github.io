@@ -2,21 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blackcat Blog</title>
-    <link>https://Blackcat-love.github.io/</link>
+    <link>https://blackcat-love.github.io/</link>
     <description>Recent content on Blackcat Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 30 Dec 2021 18:37:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Dec 2021 01:57:20 +0800</lastBuildDate>
     
-	<atom:link href="https://Blackcat-love.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blackcat-love.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>GFW网络长城的原理</title>
+      <link>https://blackcat-love.github.io/post/blog3/</link>
+      <pubDate>Fri, 31 Dec 2021 01:57:20 +0800</pubDate>
+      
+      <guid>https://blackcat-love.github.io/post/blog3/</guid>
+      <description>2022-1-7
+其实这篇文章我写了两次，第一次我写到了笔记本上，写完之后很空虚，我觉得有些东西分享出去会对大家更有帮助，而且也更有成就
+所以第二次我投稿到了bilibili,但是却因为敏感原因删除了我的文章，我感到无奈
+直到这段时间，我创建了博客，自己研究的这些东西终于有了一席之地，我很开心
+回到主题
+访问一个主页，我们需要输入域名，基本上是以www.(域名).com的格式，但对于计算机，它是无法识别的，这时候需要将域名转换成IP地址，也就是计算机可以识别的地址
+IP地址是一个独一无二的地址，每个电脑在上网的时候都需要一个IP地址，然后再访问一个网站的时候，就要先知道对方的IP地址，才能建立链接访问
+如果举例来说，IP地址就像是你家的门牌号，这一串数字记录了你的省县城市还有你的门牌号，而且这个地址是世界独一无二的，只有这样才能确保不会走错家门
+而访问网站，则是串门，你需要知道对方家的地址才能访问，这就是IP地址访问的原理
+那为什么会出现域名呢，直接用IP地址去访问不久好了吗，这就要从人类的理解角度说起，虽然IP访问也是可以的，但是人类面对一串串数字难免会记不清楚，但如果是单词则会更容易理解，比如让你访问百度，你可能一直记住他的IP地址吧，一般来说都是baidu.com
+那么就需要一个中间人来同时保存IP地址和对应的域名，这样当我们输入域名的时候，这个中间人就会把他转换成IP地址，然后计算机在根据IP地址去找到对方网址，实现了访问
+这个中间人我们称它为 DNS服务器（Domain Name Server，域名服务器）
+知道了原理，那么如果往相反的方向思考，则能发现新的乐趣，DNS的存在决定了能不能够访问网站，那么如果可以更改这个DNS，或者是干扰，这样当你访问一个网站的时候，它给你指向一个错误的IP地址，你就会无法访问
+这就是DNS攻击
+除此之外还有DNS感染
+GFW的原理则是，针对了中国的NDS，进行了感染攻击，让其无法访问外国的某些网站，这边是人们常称作的GFW中国网络防火墙
+而所谓的翻墙则是，去建立一个中国能够访问的外国服务器，然后通过这个服务器再去访问其他的网站，服务器再把网站传送到本地的电脑，实现了一个中间人的效果，这就是人们津津乐道的VPN
+其实，在某些意义上，GFW的出现确实带来了很多问题，这种建墙的操作让人苦恼，让人封闭
+但凡事有好有坏，世界很大，但不是每个人都能承受住，控制住自己的欲望，国家与国家之间用核武器相互约束对方，造成了较为和平的局面，但只是伪和平，各国之间也从单纯的战争逐渐转变成文化掠夺，文化攻击，不同于战争，这种文化攻击会彻底改变一个国家
+丧失文化自信，就如同丧失自我，终会不战而败，即使如此，也有很多人依然有着崇洋媚外的想法，这便是最经典丧失了文化自信
+在以前的时候发生过一件事情，由于github可以存放代码，而且也能托管到网站上，有人就写了一个刷票的脚本，并且挂到了github上边，最后被请去喝茶，github也因此被禁止访问，也就是DNS污染</description>
+    </item>
+    
+    <item>
       <title>有关hugo博客搭建和编辑的使用教程</title>
-      <link>https://Blackcat-love.github.io/post/bolg2/</link>
+      <link>https://blackcat-love.github.io/post/bolg2/</link>
       <pubDate>Thu, 30 Dec 2021 18:37:32 +0800</pubDate>
       
-      <guid>https://Blackcat-love.github.io/post/bolg2/</guid>
+      <guid>https://blackcat-love.github.io/post/bolg2/</guid>
       <description>自从开始学习编程以后，我便将我所学全部都记录于笔记本和网络笔记，随着积累，我便有了想要搭建博客的想法
 希望能将自己的学习历程和经验都分享给更多人，但万事开头难，我也尝试过很多次搭建，最终都以失败告终，查
 找了很多资料，最终整理出了这份搭建方法，希望能对面前的你有所帮助，如果还是无法解决，也可以联系我的邮
@@ -57,10 +86,10 @@ dir
     
     <item>
       <title>我的第一篇Blog</title>
-      <link>https://Blackcat-love.github.io/post/blog/</link>
+      <link>https://blackcat-love.github.io/post/blog/</link>
       <pubDate>Thu, 30 Dec 2021 14:29:30 +0800</pubDate>
       
-      <guid>https://Blackcat-love.github.io/post/blog/</guid>
+      <guid>https://blackcat-love.github.io/post/blog/</guid>
       <description>经过了两天的学习和了解 学会了使用hugo or heox 将本地博客推到github上，实现静态博客的配布 其中踩了许多的坑 当博客部署成功后我会将自己的经验更加详细化的记录的</description>
     </item>
     
